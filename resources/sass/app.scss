@@ -41,7 +41,6 @@ p {
     display: flex;
     flex-direction: column;
     background: #ffffff;
-    font-family: 'Lato', sans-serif;
 
     @media screen and (min-width: 375px) and (max-width: 949px) {
         background: skyblue;
@@ -71,8 +70,6 @@ p {
 .post {
     background: plum;
     margin: 5px 10px 0px;
-    font-family: 'Lato', sans-serif;
-
 
     @media screen and(min-width: 375px) and (max-width: 414px) {
         width: auto;
@@ -141,6 +138,7 @@ p {
                     margin-bottom: 0px;
 
                 }
+
             }
 
         }
@@ -178,6 +176,7 @@ p {
             @media screen and (min-width: 1440px) {
                 display: inline;
             }
+
         }
 
     }
@@ -185,12 +184,7 @@ p {
     &__img {
         width: 100%;
         height: auto;
-        // width: 375px;
-        // height: 222px;
         margin-top: 28px;
-        // background-image: url("/images/plane-375.jpg");
-        // background-size: 375px 222px;
-        // background-repeat: no-repeat;
 
         @media screen and (min-width: 320px) and (max-width: 374px) {
             margin-left: -10px;
@@ -201,7 +195,6 @@ p {
             width: 375px;
             margin-top: 25px;
             margin-left: -17px;
-
         }
 
         @media screen and (min-width: 376px) and (max-width: 414px) {
@@ -232,7 +225,6 @@ p {
     overflow: auto;
     background: #F5F5F5;
     height: 426px;
-    // width: 65vw;
     width: auto;
     margin: 15px 10px;
 
@@ -345,7 +337,6 @@ p {
         height: 310px;
         margin-top: 322px;
     }
-
 
     &__backdrop {
         position: fixed;
@@ -477,6 +468,7 @@ p {
             margin-left: 12px;
             margin-top: 12px;
         }
+
     }
 
     &__enter {
@@ -515,7 +507,6 @@ p {
         @media screen and (min-width: 1440px) {
             margin-top: 21px;
         }
-
 
     }
 

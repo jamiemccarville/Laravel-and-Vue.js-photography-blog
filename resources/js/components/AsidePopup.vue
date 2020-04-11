@@ -19,7 +19,6 @@
 </template>
 
 <script>
-//  :style="{ backgroundImage: url(`${bgImage}`)}"
 import AsideForm from "../components/AsideForm";
 
 export default {

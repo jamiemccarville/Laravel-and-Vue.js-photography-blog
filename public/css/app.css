@@ -32,7 +32,6 @@ p {
   display: flex;
   flex-direction: column;
   background: #ffffff;
-  font-family: "Lato", sans-serif;
 }
 
 @media screen and (min-width: 375px) and (max-width: 949px) {
@@ -65,7 +64,6 @@ p {
 .post {
   background: plum;
   margin: 5px 10px 0px;
-  font-family: "Lato", sans-serif;
 }
 
 @media screen and (min-width: 375px) and (max-width: 414px) {
