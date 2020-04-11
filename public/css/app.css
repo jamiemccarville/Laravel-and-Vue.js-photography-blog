@@ -36,14 +36,12 @@ p {
 
 @media screen and (min-width: 375px) and (max-width: 949px) {
   .container {
-    background: skyblue;
     width: 100vw;
   }
 }
 
 @media screen and (min-width: 950px) and (max-width: 1439px), (min-width: 1441px) {
   .container {
-    background: lightseagreen;
     width: 100vw;
     margin: 0 auto;
     flex-direction: row;
@@ -55,14 +53,12 @@ p {
   .container {
     flex-direction: row;
     width: 100vw;
-    background: lightslategray;
   }
 }
 
 /* ----------  Post Styles  ---------- */
 
 .post {
-  background: plum;
   margin: 5px 10px 0px;
 }
 
