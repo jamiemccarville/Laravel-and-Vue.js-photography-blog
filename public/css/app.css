@@ -416,10 +416,16 @@ p {
 
 .modal__heading {
   font-weight: bold;
-  width: 319px;
+  width: 95%;
   font-size: 20px;
   line-height: 26px;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 375px) {
+  .modal__heading {
+    width: 319px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -556,7 +562,7 @@ p {
   box-shadow: inset 0px 1px 5px rgba(142, 142, 142, 0.5);
   color: #828282;
   font-weight: 300;
-  width: 320px;
+  width: 100%;
   height: 49px;
   font-size: 17px;
   line-height: 20px;
