@@ -199,3 +199,345 @@
     }
 
 }
+
+
+/* ----------  Aside Styles  ---------- */
+
+.aside {
+    overflow: auto;
+    background: #F5F5F5;
+    height: 426px;
+    // width: 65vw;
+    width: auto;
+    margin: 15px 10px;
+
+    @media screen and (width:375px) {
+        width: 340px;
+        margin: 15px 18px 37px 17px;
+    }
+
+    @media screen and (min-width: 376px) and (max-width: 414px) {
+        width: auto;
+        margin: 15px 18px 37px 17px;
+    }
+
+    @media screen and (min-width: 415px) and (max-width: 949px) {
+        width: 65vw;
+        margin: 15px auto;
+    }
+
+    @media screen and (min-width: 950px) and (max-width: 1439px) {
+        height: 640px;
+        width: 270px;
+        margin-top: 154px;
+        margin-right: 4vw;
+        margin-left: 0;
+    }
+
+    @media screen and (min-width: 1440px) {
+        height: 640px;
+        width: 270px;
+        margin-top: 154px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    &__btnwrapper {
+        width: 80%;
+        height: 50px;
+        margin: 50px auto;
+
+        @media screen and (width: 375px) {
+            width: 283px;
+            height: 50px;
+            margin: 34px 28px 0 29px;
+        }
+
+        @media screen and (min-width: 769px) {
+            width: 220px;
+            height: 40px;
+            margin: 50px 24px 0 26px;
+        }
+
+    }
+
+    &__btn {
+        cursor: pointer;
+        background-image: linear-gradient(to right, #AC519C, #E5424F);
+        width: 100%;
+        height: 50px;
+
+        @media screen and (width: 375px) {
+            width: 283px;
+            height: 50px;
+        }
+
+        @media screen and (min-width: 769px) {
+            width: 220px;
+            height: 40px;
+        }
+
+    }
+
+    &__btntext {
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 16px;
+
+        @media screen and (min-width: 375px) {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        @media screen and (min-width: 769px) {
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+        @media screen and (min-width: 1440px) {}
+
+    }
+
+}
+
+/* AsidePopup */
+
+.modal {
+    width: 355px;
+    height: 272px;
+    margin: 130px 9px 0 11px;
+    background: #ffffff;
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    @media screen and (min-width: 500px) {
+        width: 570px;
+        height: 310px;
+        margin-top: 322px;
+    }
+
+
+    &__backdrop {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(38, 38, 38, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__close {
+        background-color: transparent;
+        margin-top: -2px;
+        width: 48px;
+        height: 50px;
+        // background-image: url('images/close.svg');
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        border: none;
+    }
+
+    &__progress {
+        margin-top: 13px;
+
+        @media screen and (min-width: 1440px) {
+            display: none;
+        }
+
+        &--lg {
+            display: none;
+
+            @media screen and (min-width: 1440px) {
+                display: block;
+                margin-top: 18px;
+
+            }
+
+        }
+
+    }
+
+    &__heading {
+        font-weight: bold;
+        width: 319px;
+        font-size: 20px;
+        line-height: 26px;
+        margin-top: 20px;
+
+        @media screen and (min-width: 1440px) {
+            width: 440px;
+            font-size: 23px;
+            line-height: 28px;
+            margin-top: 22px;
+            text-align: center;
+        }
+
+    }
+
+    &__highlight {
+        color: #007A02;
+    }
+
+    &__form.invalid input {
+        border: 1px solid #e51323;
+        color: #e51323;
+    }
+
+
+    &__form {
+        margin-top: 20px;
+        display: relative;
+
+        @media screen and (min-width: 375px) and (max-width: 768px) {
+            width: 320px;
+            height: 49px;
+        }
+
+        @media screen and (min-width: 1440px) {}
+
+        &__hidden {
+            display: none;
+        }
+
+        &__input {
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &__input input::placeholder {
+            color: #828282;
+            opacity: 1;
+            font-size: 16px;
+        }
+
+        &__input input:focus::placeholder {
+            opacity: 0;
+        }
+
+        &__input input:placeholder-shown {
+            color: #000000;
+            font-size: 16px;
+        }
+
+        // .invalid input {
+        //   border: 2px solid #e51323;
+        //   color: #e51323;
+        // }
+
+        &__.invalid input {
+            border: 2px solid #e51323;
+            color: #e51323;
+        }
+
+        &__pad {
+            padding-top: 20px;
+        }
+
+    }
+
+    &__enter,
+    &__errmsg {
+        font-size: 12px;
+        line-height: 14px;
+        position: absolute;
+        margin-left: 12px;
+        margin-top: 8px;
+
+
+        @media screen and (min-width: 1400px) {
+            margin-left: 12px;
+            margin-top: 12px;
+        }
+    }
+
+    &__enter {
+        color: #828282;
+    }
+
+    &__errmsg {
+        color: #e51323;
+    }
+
+    &__input {
+        box-shadow: inset 0px 1px 5px rgba(142, 142, 142, 0.5);
+        color: #828282;
+        font-weight: 300;
+        width: 320px;
+        height: 49px;
+        font-size: 17px;
+        line-height: 20px;
+        padding-left: 11px;
+        // padding-top: 10px;
+
+
+        @media screen and (min-width: 1440px) {
+            width: 440px;
+            height: 54px;
+            font-size: 18px;
+            line-height: 22px;
+            // padding-left: 11px;
+            // padding-top: 3px;
+            // padding-bottom: 3px;
+
+
+        }
+
+    }
+
+    &__btnwrapper {
+        margin-top: 16px;
+        margin-bottom: 24px;
+
+        @media screen and (min-width: 1440px) {
+            margin-top: 21px;
+        }
+
+
+    }
+
+    &__submit {
+        cursor: pointer;
+        background-image: linear-gradient(to right, #AC519C, #E5424F);
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        width: 320px;
+        height: 45px;
+
+        @media screen and (min-width: 1440px) {
+            width: 440px;
+            height: 48px;
+        }
+
+
+        &:hover {
+            background-image: linear-gradient(to right, #B678AA 1.29%, #E28990);
+        }
+
+    }
+
+    &__fade-enter,
+    &__fade-leave-to {
+        opacity: 0;
+    }
+
+    &__fade-enter-active,
+    &__fade-leave-active {
+        transition: opacity 0.5s ease;
+    }
+
+    &__input:focus {
+        padding-top: 20px;
+    }
+
+}
