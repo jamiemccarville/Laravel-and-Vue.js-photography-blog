@@ -4,5 +4,185 @@
 // Variables
 @import 'variables';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+/* ----------  Main Section Styles  ---------- */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+
+    @media screen and (min-width: 375px) and (max-width: 949px) {
+        background: skyblue;
+        width: 100vw;
+    }
+
+    @media screen and (min-width: 950px) and (max-width: 1439px),
+    (min-width: 1441px) {
+        background: lightseagreen;
+        width: 100vw;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    @media screen and (width: 1440px) {
+        // height: 1678px;
+        flex-direction: row;
+        width: 100vw;
+        background: lightslategray;
+
+    }
+
+}
+
+/* ----------  Post Styles  ---------- */
+
+.post {
+    background: plum;
+    margin: 5px 10px 0px;
+
+    @media screen and(min-width: 375px) and (max-width: 414px) {
+        width: auto;
+        margin-left: 17px;
+        margin-right: 18px;
+        margin-top: 25px;
+    }
+
+    @media only screen and (min-width: 415px) and (max-width: 949px) {
+        width: 71%;
+        max-width: 560px;
+        margin: 25px auto;
+    }
+
+    @media screen and (min-width: 950px) and (max-width: 1439px) {
+        width: 560px;
+        margin-right: 4vw;
+        margin-left: 4vw;
+        margin-top: 76px;
+        margin-bottom: 138px;
+    }
+
+    @media only screen and (min-width: 1440px) {
+        height: 1464px;
+        width: 560px;
+        margin: 76px 70px 138px 267px;
+    }
+
+    &__heading {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        max-width: 655px;
+
+        @media screen and (min-width: 623px) and (max-width: 949px) {
+            text-align: center;
+        }
+
+        @media screen and (min-width: 769px) {
+            font-size: 26px;
+            line-height: 31px;
+        }
+
+        &--h2 {
+            height: 49px;
+            font-size: 18px;
+            line-height: 22px;
+            margin-top: 31px;
+            margin-bottom: 16px;
+            text-align: left;
+
+            @media screen and (min-width: 769px) {
+                height: 49px;
+                font-size: 18px;
+                line-height: 22px;
+                margin-top: 20px;
+                margin-bottom: 0px;
+            }
+
+            &--2 {
+                margin-bottom: 14px;
+                margin-top: 43px;
+
+                @media screen and (min-width: 769px) {
+                    margin-top: 20px;
+                    margin-bottom: 0px;
+
+                }
+            }
+
+        }
+
+    }
+
+    &__divider {
+        width: 100%;
+        margin-top: 27px;
+
+        @media only screen and (min-width: 950px) {
+            width: auto;
+            margin-top: 16px;
+        }
+
+    }
+
+    &__p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 22px;
+
+        @media screen and (min-width: 1440px) {
+            margin-top: 23px;
+        }
+
+        &--marginb {
+            margin-top: 0;
+            margin-bottom: 18px;
+        }
+
+        &--break {
+            display: none;
+
+            @media screen and (min-width: 1440px) {
+                display: inline;
+            }
+        }
+
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+        margin-top: 28px;
+
+        @media screen and (min-width: 320px) and (max-width: 374px) {
+            margin-left: -10px;
+            width: 100vw;
+        }
+
+        @media screen and (width: 375px) {
+            width: 375px;
+            margin-top: 25px;
+            margin-left: -17px;
+
+        }
+
+        @media screen and (min-width: 376px) and (max-width: 414px) {
+            width: 100vw;
+            margin-top: 25px;
+            margin-left: -17px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 560px;
+            margin-top: 28px;
+            margin-bottom: 21px;
+            margin-left: 0
+        }
+
+    }
+
+    &__section {
+        margin-top: -8px;
+    }
+
+}
