@@ -26,9 +26,6 @@
       <div class="modal__btnwrapper">
         <button class="modal__submit" @click.prevent="checkForm">Send Me The Tips »</button>
       </div>
-      <!-- <p>
-        <button @click.prevent="checkForm">go now</button>
-      </p>-->
     </form>
   </div>
 </template>
