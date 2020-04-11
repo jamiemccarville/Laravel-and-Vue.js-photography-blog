@@ -358,6 +358,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 // let photos = {
 // a: require("/images/plane-375.jpg");
 //   b: require("/images/plane-560.jpg"),
@@ -1151,7 +1157,20 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("img", {
         staticClass: "post__img",
-        attrs: { src: "/images/plane-375.jpg", alt: "" }
+        attrs: {
+          src: "/images/plane-375.jpg",
+          srcset:
+            "/images/plane-375.jpg" +
+            " 375w, " +
+            "/images/plane-560.jpg" +
+            " 560w, " +
+            "/images/plane-750.jpg" +
+            " 750w, " +
+            "/images/plane-1120.jpg" +
+            " 1120w, " +
+            "/images/plane-1680.jpg" +
+            " 1680w"
+        }
       }),
       _vm._v(" "),
       _c("h2", { staticClass: "post__heading post__heading--h2" }, [

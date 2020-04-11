@@ -184,7 +184,12 @@ p {
     &__img {
         width: 100%;
         height: auto;
+        // width: 375px;
+        // height: 222px;
         margin-top: 28px;
+        // background-image: url("/images/plane-375.jpg");
+        // background-size: 375px 222px;
+        // background-repeat: no-repeat;
 
         @media screen and (min-width: 320px) and (max-width: 374px) {
             margin-left: -10px;

@@ -12,7 +12,13 @@
       of your trip. Read on to discover how to take better travel photos with
       your iPhone!
     </p>
-    <img src="/images/plane-375.jpg" alt class="post__img" />
+    <img
+      class="post__img"
+      src="/images/plane-375.jpg"
+      srcset="/images/plane-375.jpg 375w, /images/plane-560.jpg 560w, /images/plane-750.jpg 750w, /images/plane-1120.jpg 1120w, /images/plane-1680.jpg 1680w"
+    />
+    <!-- <div class="post__img"></div> -->
+    <!-- <img src="/images/plane-375.jpg" alt class="post__img" /> -->
     <!-- <img
       src="/images/plane-375.jpg"
       :srcset="
