@@ -31,6 +31,6 @@ I kept the aside content similar to the provided design through different screen
 
 ### Main and Aside Content Together
 
-From when the design switches to flex: row at 950px, I keep the main and aside content a consitent width apart from each other and consistent distancr from the top of the screen.  They are centered and the available space on either sode increases/decreases as the screen size changes.  I felt that this gave the design a unified feel through multiple screen sizes.
+From when the design switches to flex: row at 950px, the space between the main and aside content increase as a percentage of the screen width, to their maximum distance apart at 1440px.   They are centered and the available space on either side increases/decreases as the screen size changes.  I felt that this gave the design a unified feel through multiple screen sizes.
 
 I hope these notes provided some insight to my thought process and design decisions.  I had a lot of fun developing this project and I'm excited to pass it back 😃.
