@@ -1,7 +1,8 @@
 <template>
   <div class="post">
     <h1 class="post__heading">10 Best Photo Apps For Incredible iPhone Photography (2020 Edition)</h1>
-    <!-- <img src="../assets/divider.svg" alt="page divider" class="post__divider" /> -->
+
+    <img src="/images/divider.svg" alt="page divider" class="post__divider" />
     <p class="post__p">
       How do you capture more interesting travel photos with your iPhone? How do
       you avoid taking the same cliché vacation photos that everyone else takes?
@@ -11,8 +12,9 @@
       of your trip. Read on to discover how to take better travel photos with
       your iPhone!
     </p>
+    <img src="/images/plane-375.jpg" alt class="post__img" />
     <!-- <img
-      src="../assets/plane-375.jpg"
+      src="/images/plane-375.jpg"
       :srcset="
         `${photos.a} 1x, ${photos.b} 1.5x, ${photos.c} 2x, ${photos.d} 3x, ${photos.e} 4x`
       "
@@ -81,11 +83,11 @@
 
 <script>
 // let photos = {
-//   a: require("../assets/plane-375.jpg"),
-//   b: require("../assets/plane-560.jpg"),
-//   c: require("../assets/plane-750.jpg"),
-//   d: require("../assets/plane-1120.jpg"),
-//   e: require("../assets/plane-1680.jpg")
+//   a: require("/images/plane-375.jpg"),
+//   b: require("/images/plane-560.jpg"),
+//   c: require("/images/plane-750.jpg"),
+//   d: require("/images/plane-1120.jpg"),
+//   e: require("/images/plane-1680.jpg")
 // };
 export default {
   computed: {

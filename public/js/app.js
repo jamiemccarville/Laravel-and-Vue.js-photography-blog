@@ -193,12 +193,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 // let photos = {
-//   a: require("../assets/plane-375.jpg"),
-//   b: require("../assets/plane-560.jpg"),
-//   c: require("../assets/plane-750.jpg"),
-//   d: require("../assets/plane-1120.jpg"),
-//   e: require("../assets/plane-1680.jpg")
+//   a: require("/images/plane-375.jpg"),
+//   b: require("/images/plane-560.jpg"),
+//   c: require("/images/plane-750.jpg"),
+//   d: require("/images/plane-1120.jpg"),
+//   e: require("/images/plane-1680.jpg")
 // };
 /* harmony default export */ __webpack_exports__["default"] = ({
   computed: {
@@ -778,11 +780,21 @@ var staticRenderFns = [
         )
       ]),
       _vm._v(" "),
+      _c("img", {
+        staticClass: "post__divider",
+        attrs: { src: "/images/divider.svg", alt: "page divider" }
+      }),
+      _vm._v(" "),
       _c("p", { staticClass: "post__p" }, [
         _vm._v(
           "\n    How do you capture more interesting travel photos with your iPhone? How do\n    you avoid taking the same cliché vacation photos that everyone else takes?\n    I recently interviewed Steffen Geldner – a talented iPhone photographer\n    with a passion for travel. In this article, Steffen reveals 7 tips for\n    shooting beautiful travel photos that will preserve the amazing memories\n    of your trip. Read on to discover how to take better travel photos with\n    your iPhone!\n  "
         )
       ]),
+      _vm._v(" "),
+      _c("img", {
+        staticClass: "post__img",
+        attrs: { src: "/images/plane-375.jpg", alt: "" }
+      }),
       _vm._v(" "),
       _c("h2", { staticClass: "post__heading post__heading--h2" }, [
         _vm._v(

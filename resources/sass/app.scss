@@ -1,8 +1,18 @@
 // Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 // Variables
 @import 'variables';
+
+#app {
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #101010;
+}
+
 
 /* ----------  Main Section Styles  ---------- */
 
@@ -10,6 +20,7 @@
     display: flex;
     flex-direction: column;
     background: #ffffff;
+    font-family: 'Lato', sans-serif;
 
     @media screen and (min-width: 375px) and (max-width: 949px) {
         background: skyblue;
@@ -40,6 +51,8 @@
 .post {
     background: plum;
     margin: 5px 10px 0px;
+    font-family: 'Lato', sans-serif;
+
 
     @media screen and(min-width: 375px) and (max-width: 414px) {
         width: auto;
