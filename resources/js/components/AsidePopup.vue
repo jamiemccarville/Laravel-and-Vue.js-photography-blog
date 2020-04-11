@@ -17,15 +17,17 @@
 </template>
 
 <script>
-// import AsideForm from "../components/AsideForm";
+//  :style="{ backgroundImage: url(`${bgImage}`)}"
+import AsideForm from "../components/AsideForm";
 
 export default {
   name: "modal",
   components: {
-    // AsideForm
+    AsideForm
   },
   data() {
     return {
+      bgImage: "/images/close.svg",
       placeholder: "Please enter your email here",
       headingText: `Enter Your Email To Get <span class="modal__highlight">FREE</span>
           <br class="post__p--break" />iPhone Photography Email Tips:`

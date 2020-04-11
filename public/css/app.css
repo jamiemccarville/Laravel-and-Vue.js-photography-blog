@@ -1,6 +1,23 @@
 @import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;
 
-700&display=swap);@import url(https://fonts.googleapis.com/css?family=Nunito);#app {
+700&display=swap);@import url(https://fonts.googleapis.com/css?family=Nunito);*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+#app {
   font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -371,6 +388,7 @@
   margin-top: -2px;
   width: 48px;
   height: 50px;
+  background-image: url("/images/close.svg");
   position: absolute;
   right: 0;
   cursor: pointer;
