@@ -235,6 +235,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 //  :style="{ backgroundImage: url(`${bgImage}`)}"
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -354,23 +356,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// let photos = {
-// a: require("/images/plane-375.jpg");
-//   b: require("/images/plane-560.jpg"),
-//   c: require("/images/plane-750.jpg"),
-//   d: require("/images/plane-1120.jpg"),
-//   e: require("/images/plane-1680.jpg")
-// };
 /* harmony default export */ __webpack_exports__["default"] = ({
   computed: {
     photos: function (_photos) {
@@ -1070,41 +1055,36 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("transition", { attrs: { name: "modal__fade" } }, [
     _c("div", { staticClass: "modal__backdrop" }, [
-      _c(
-        "div",
-        { staticClass: "modal" },
-        [
-          _c("button", {
-            staticClass: "modal__close",
-            attrs: { type: "button" },
-            on: { click: _vm.close }
-          }),
-          _vm._v(" "),
-          _c("img", {
-            staticClass: "modal__progress",
-            attrs: {
-              src: "/images/popout-progress-bar-sm.svg",
-              alt: "progress bar"
-            }
-          }),
-          _vm._v(" "),
-          _c("img", {
-            staticClass: "modal__progress--lg",
-            attrs: {
-              src: "/images/popout-progress-bar-lg.svg",
-              alt: "progress bar"
-            }
-          }),
-          _vm._v(" "),
-          _c("h3", {
-            staticClass: "modal__heading",
-            domProps: { innerHTML: _vm._s(_vm.headingText) }
-          }),
-          _vm._v(" "),
-          _c("aside-form")
-        ],
-        1
-      )
+      _c("div", { staticClass: "modal" }, [
+        _c("button", {
+          staticClass: "modal__close",
+          attrs: { type: "button" },
+          on: { click: _vm.close }
+        }),
+        _vm._v(" "),
+        _c("img", {
+          staticClass: "modal__progress",
+          attrs: {
+            src: "/images/popout-progress-bar-sm.svg",
+            alt: "progress bar"
+          }
+        }),
+        _vm._v(" "),
+        _c("img", {
+          staticClass: "modal__progress--lg",
+          attrs: {
+            src: "/images/popout-progress-bar-lg.svg",
+            alt: "progress bar"
+          }
+        }),
+        _vm._v(" "),
+        _c("h3", {
+          staticClass: "modal__heading",
+          domProps: { innerHTML: _vm._s(_vm.headingText) }
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "modal__form__margin" }, [_c("aside-form")], 1)
+      ])
     ])
   ])
 }

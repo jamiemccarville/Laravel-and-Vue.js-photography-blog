@@ -17,16 +17,6 @@
       src="/images/plane-375.jpg"
       srcset="/images/plane-375.jpg 375w, /images/plane-560.jpg 560w, /images/plane-750.jpg 750w, /images/plane-1120.jpg 1120w, /images/plane-1680.jpg 1680w"
     />
-    <!-- <div class="post__img"></div> -->
-    <!-- <img src="/images/plane-375.jpg" alt class="post__img" /> -->
-    <!-- <img
-      src="/images/plane-375.jpg"
-      :srcset="
-        `${photos.a} 1x, ${photos.b} 1.5x, ${photos.c} 2x, ${photos.d} 3x, ${photos.e} 4x`
-      "
-      alt="forced perspective grabbing an airplane"
-      class="post__img"
-    />-->
     <h2
       class="post__heading post__heading--h2"
     >1. Research Your Destination To Find The Best Photo Opportunities</h2>
@@ -88,13 +78,6 @@
 </template>
 
 <script>
-// let photos = {
-// a: require("/images/plane-375.jpg");
-//   b: require("/images/plane-560.jpg"),
-//   c: require("/images/plane-750.jpg"),
-//   d: require("/images/plane-1120.jpg"),
-//   e: require("/images/plane-1680.jpg")
-// };
 export default {
   computed: {
     photos() {

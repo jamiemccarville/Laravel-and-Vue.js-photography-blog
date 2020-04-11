@@ -10,7 +10,9 @@
           class="modal__progress--lg"
         />
         <h3 class="modal__heading" v-html="headingText"></h3>
-        <aside-form></aside-form>
+        <div class="modal__form__margin">
+          <aside-form></aside-form>
+        </div>
       </div>
     </div>
   </transition>

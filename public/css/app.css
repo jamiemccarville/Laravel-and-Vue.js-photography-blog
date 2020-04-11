@@ -17,6 +17,8 @@ p {
   margin: 0;
 }
 
+/* ----------  Global Styles  ---------- */
+
 #app {
   font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -159,7 +161,7 @@ p {
 
 @media only screen and (min-width: 950px) {
   .post__divider {
-    width: auto;
+    width: 100%;
     margin-top: 16px;
   }
 }
@@ -172,7 +174,7 @@ p {
 
 @media screen and (min-width: 1440px) {
   .post__p {
-    margin-top: 23px;
+    margin-top: 24px;
   }
 }
 
@@ -452,6 +454,12 @@ p {
   .modal__form {
     width: 320px;
     height: 49px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .modal__form__margin {
+    margin-top: 3px;
   }
 }
 
