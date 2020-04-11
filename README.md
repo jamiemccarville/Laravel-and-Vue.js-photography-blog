@@ -1,79 +1,36 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# Project Notes
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+Hi Jānis and Emīls!  I just wanted to take a second and gives some notes about my thought process as I developed the project.  Without any specific guidelines for the structure there were obviously some decisions to be made about how to put everything together.  Below I will give a brief overview of my choices.
 
-## About Laravel
+## Modular
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+I decided that as it was a Vue.js project, that it made sense to use multiple components and not just put all of the code into a single component.  Even though this project only has one page, using multiple components is representative of what the process would look like while developing most other Vue.js projects.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Global Style Sheet
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+I decided to use a global style sheet as opposed to keeping the styles in and scoped to their own components.  This allowed me to utilize both scss and BEM easily across all of the styles.
 
-## Learning Laravel
+## Responsive Design
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+My approach was to trying and keep the look and feel similar to the required design across all screen sizes.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Main Content Size
 
-## Laravel Sponsors
+I wanted to have the width of the main content section expand as the screen size expanded, but to a maximum of 560px (the width that it is for 1440px screen size).  This kept content in that section from expanding too much and no longer matching the feel of the design.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Breakpoints
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-- [云软科技](http://www.yunruan.ltd/)
+I chose 950px as the breakpoint for the design to go from flex: column to flex: row for the following reasons:
 
-## Contributing
+  1. This would keep the design in column for the standard iPad screen (768px) but display in row for the iPad pro (1024px)
+  2. So why specifically 950px?  This was the point just before the aside section would start to be squised by the shrinking screen, making the button text move to two lines.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Aside Content Size
 
-## Code of Conduct
+I kept the aside content similar to the provided design through different screen sizes.  I kept it the same width as the main section through 414px (iphone XS Max) and then made the width a percentage of the screen width through 949px - when the design switches from column to row.  Similar to the main content, the aside content keeps the same width as the 1440px design once the display switches to row.  
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Main and Aside Content Together
 
-## Security Vulnerabilities
+From when the design switches to flex: row at 950px, I keep the main and aside content a consitent width apart from each other and consistent distancr from the top of the screen.  They are centered and the available space on either sode increases/decreases as the screen size changes.  I felt that this gave the design a unified feel through multiple screen sizes.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+I hope these notes provided some insight to my thought process and design decisions.  I had a lot of fun developing this project and I'm excited to pass it back 😃.
