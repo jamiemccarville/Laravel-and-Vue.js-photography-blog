@@ -514,11 +514,6 @@ p {
   opacity: 0;
 }
 
-.modal__form__input input:placeholder-shown {
-  color: #000000;
-  font-size: 16px;
-}
-
 .modal__form__.invalid input {
   border: 2px solid #e51323;
   color: #e51323;

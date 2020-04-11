@@ -161,6 +161,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -168,12 +173,13 @@ __webpack_require__.r(__webpack_exports__);
       message: "Please enter your email here",
       errors: [],
       active: false,
-      padded: false
+      padded: false,
+      darker: false
     };
   },
   methods: {
     isActive: function isActive() {
-      return (this.active = true) && (this.padded = true);
+      return (this.active = true) && (this.padded = true) && (this.darker = true);
     },
     checkForm: function checkForm(e) {
       this.errors = [];
@@ -353,7 +359,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 // let photos = {
-//   a: require("/images/plane-375.jpg"),
+// a: require("/images/plane-375.jpg");
 //   b: require("/images/plane-560.jpg"),
 //   c: require("/images/plane-750.jpg"),
 //   d: require("/images/plane-1120.jpg"),
@@ -962,6 +968,7 @@ var render = function() {
         "form",
         {
           staticClass: "modal__form__input",
+          class: { black: _vm.darker },
           attrs: { novalidate: "true" },
           on: { submit: _vm.checkForm }
         },

@@ -1,6 +1,11 @@
 <template>
   <div class="modal__form" :class="{ invalid: this.errors.length }">
-    <form @submit="checkForm" novalidate="true" class="modal__form__input">
+    <form
+      @submit="checkForm"
+      novalidate="true"
+      class="modal__form__input"
+      :class="{ black: darker}"
+    >
       <p
         v-if="active"
         :class="{ modal__form__hidden: this.errors.length }"
@@ -35,12 +40,15 @@ export default {
       message: "Please enter your email here",
       errors: [],
       active: false,
-      padded: false
+      padded: false,
+      darker: false
     };
   },
   methods: {
     isActive: function() {
-      return (this.active = true) && (this.padded = true);
+      return (
+        (this.active = true) && (this.padded = true) && (this.darker = true)
+      );
     },
     checkForm: function(e) {
       this.errors = [];

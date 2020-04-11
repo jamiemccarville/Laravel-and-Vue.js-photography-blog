@@ -83,7 +83,7 @@
 
 <script>
 // let photos = {
-//   a: require("/images/plane-375.jpg"),
+// a: require("/images/plane-375.jpg");
 //   b: require("/images/plane-560.jpg"),
 //   c: require("/images/plane-750.jpg"),
 //   d: require("/images/plane-1120.jpg"),
