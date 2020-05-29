@@ -2,7 +2,7 @@
   <div class="post">
     <h1 class="post__heading">10 Best Photo Apps For Incredible iPhone Photography (2020 Edition)</h1>
 
-    <img src="/images/divider.svg" alt="page divider" class="post__divider" />
+    <img src="/images/pagedivider.svg" alt="page divider" class="post__divider" />
     <p class="post__p">
       How do you capture more interesting travel photos with your iPhone? How do
       you avoid taking the same cliché vacation photos that everyone else takes?
