@@ -1122,7 +1122,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("img", {
         staticClass: "post__divider",
-        attrs: { src: "/images/divider.svg", alt: "page divider" }
+        attrs: { src: "/images/pagedivider.svg", alt: "page divider" }
       }),
       _vm._v(" "),
       _c("p", { staticClass: "post__p" }, [
