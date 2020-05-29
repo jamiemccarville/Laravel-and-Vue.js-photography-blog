@@ -77,7 +77,7 @@
     <GithubCorner
       url="https://github.com/jamiemccarville/Laravel-and-Vue.js-photography-blog"
       cornerColor="#fff"
-      gitColor="#ac519c"
+      gitColor="#C84975"
       :flipOnHover="flipOnHover"
     ></GithubCorner>
   </div>
