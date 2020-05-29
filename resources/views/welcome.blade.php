@@ -9,7 +9,7 @@
 
 
 
-  <title>iPS Dev Test</title>
+  <title>Vue.js and Laravel</title>
 
 
 </head>
